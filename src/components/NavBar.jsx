@@ -10,32 +10,32 @@ const links = [
     },
     {
         name: 'Acerca_de',
-        href: './about',
+        href: './LR-DesingCode/about',
         icon: 'bx bx-user'
     },
     {
         name: 'Habilidades',
-        href: './skills',
+        href: './LR-DesingCode/skills',
         icon: 'bx bx-cog'
     },
     {
         name: 'Tienda',
-        href: './tienda',
+        href: './LR-DesingCode/tienda',
         icon: 'bx bxs-store'
     },
-    {
-        name: 'Proyectos',
-        href: './proyectos',
-        icon: 'bx bx-folder'
-    },
+    // {
+    //     name: 'Proyectos',
+    //     href: './LR-DesingCode/proyectos',
+    //     icon: 'bx bx-folder'
+    // },
     {
         name: 'Contactos',
-        href: './contact',
+        href: './LR-DesingCode/contact',
         icon: 'bx bx-map'
     },
     {
         name: 'Criterios',
-        href: './criterios',
+        href: './LR-DesingCode/criterios',
         icon: 'bx bx-vector'
     },
 ]

@@ -21,12 +21,12 @@ function App() {
             <Router>
                 <NavBar />
                 <Routes>
-                    <Route path='/' element={<Home />} />
-                    <Route path='/about' element={<About/>} />
-                    <Route path='/skills' element={<Skills/>} />
-                    <Route path='/tienda' element={<Tienda/>} />
-                    <Route path='/contact' element={<Contact/>} />
-                    <Route path='/criterios' element={<Criterios/>} />
+                    <Route path='/LR-DesingCode' element={<Home />} />
+                    <Route path='/LR-DesingCode/about' element={<About/>} />
+                    <Route path='/LR-DesingCode/skills' element={<Skills/>} />
+                    <Route path='/LR-DesingCode/tienda' element={<Tienda/>} />
+                    <Route path='/LR-DesingCode/contact' element={<Contact/>} />
+                    <Route path='/LR-DesingCode/criterios' element={<Criterios/>} />
                 </Routes>
             </Router>
         </>
