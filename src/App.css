@@ -1,0 +1,50 @@
+
+
+h1 {
+    font-size: 2.7em;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: .9em;
+    color: #bbb;
+    margin-bottom: 2rem;
+    line-height: 1.8em;
+}
+
+.container {
+    width: calc(100% - 55px);
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid > div:nth-child(1) {
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width:950px) {
+    .container {
+        width: 100%;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:450px) {
+    h1 {
+        font-size: 1.6em;
+    }
+}

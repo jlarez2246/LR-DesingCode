@@ -1,0 +1,135 @@
+.criterios h2{
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1.1em;
+    margin: 1rem 0 1rem;
+}
+
+.criterios > div:nth-child(2) {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.organigrama {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--primary-color);
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+.organigrama div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: .5rem 0;
+    text-transform: capitalize;
+}
+
+.organigrama > div{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.nivel-1 div, .nivel-2 div, .nivel-3 div {
+    position: relative;
+}
+
+.nivel-2 div::after, .nivel-3 div::after {
+    content: ' ';
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    width: 1px;
+    height: 2rem;
+    background-color: var(--primary-color);
+}
+
+.nivel-2 div::before, .nivel-3 div::before {
+    content: ' ';
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    height: 1px;
+    background-color: var(--primary-color);
+    transform: translateX(-50%);
+}
+.nivel-3 div::before {
+    width: 18.75em;
+}
+.nivel-2 div::before {
+    width: 12.5em;
+}
+.organigrama span{
+    position: absolute;
+    top: -34px;
+    left: 50%;
+    width: 1px;
+    height: 34px;
+    background-color: var(--primary-color);
+}
+
+.nivel-3 div {
+    width: 18.75em;
+}
+
+.nivel-2 div {
+    width: 12.5em;
+}
+
+.nivel-1 div {
+    width: 80px;
+    font-size: 70%;
+}
+
+
+@media (max-width:1440px) {
+    .organigrama {
+        width: 525px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:950px) {
+    .criterios {
+        grid-template-columns: 1fr;
+    }
+    .organigrama {
+        width: 600px;
+        font-size: 16px;
+    }
+    .criterios > div:nth-child(2) {
+        height: min-content;
+    }
+}
+
+@media (max-width:680px) {
+    .organigrama {
+        width: 380px;
+        font-size: 10px;
+    }
+
+    .nivel-1 div {
+        width: 60px;
+        font-size: 70%;
+    }
+}
+
+@media (max-width:480px) {
+    .organigrama {
+        width: 260px;
+        font-size: 7px;
+    }
+
+    .nivel-1 div {
+        width: 60px;
+        font-size: 70%;
+    }
+}

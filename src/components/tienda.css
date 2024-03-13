@@ -1,0 +1,100 @@
+.tienda{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.tienda > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.tienda > div > div {
+    width: 300px;
+    background: repeating-linear-gradient(-45deg, rgba(20, 20, 20, .3), rgba(20, 20, 20, .3) 5px, rgba(50, 50, 50, .3) 3px, rgba(50, 50, 50, .3) 8px);
+    border-radius: 20px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+.tienda > div > div:hover {
+    box-shadow: 0 0 10px var(--primary-color), 0 0 5px var(--primary-color);
+}
+
+.tienda h2 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 1rem 0;
+    position: relative;
+}
+
+.tienda h2::before {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    content: ' ';
+    width: 0;
+    transition: .3s;
+    height: 1px;
+    background: linear-gradient(90deg, #000, #003333, #008888, #00aaaa, #008888, #003333, #000);
+    transform: translateX(-50%);
+}
+
+.tienda > div > div:hover h2 {
+    color: var(--primary-color);
+}
+
+.tienda > div > div:hover h2::before {
+    width: 200px;
+}
+
+.tienda p {
+    margin-bottom: 2rem;
+}
+
+.tienda div p {
+    font-size: .8em;
+    margin-bottom: 0;
+}
+
+.tienda h3 {
+    font-size: 2.2em;
+    color: var(--primary-color);
+}
+
+.tienda li {
+    font-size: .8em;
+    margin: .3rem 0;
+}
+.tienda button {
+    margin: 1.5rem auto 1rem;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: transparent;
+    font-size: 1em;
+    border: 1px solid #444;
+    border-radius: 5px;
+    font-family: "Ubuntu Mono", monospace;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.tienda > div > div:hover button {
+    box-shadow: 0 0 10px var(--primary-color), 0 0 5px var(--primary-color);
+    color: var(--primary-color);
+}
+
+.sisa {
+    color: #ccc;
+}
+.none {
+    color: #008888;
+    text-decoration: line-through;
+}
