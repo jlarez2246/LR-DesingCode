@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const links = [
     {
         name: 'Inicio',
-        href: './',
+        href: './LR-DesingCode',
         icon: 'bx bx-home-alt'
     },
     {
